@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="James Reynolds - jameshenryreynolds.com - Codify Academy">
+		<meta name = "description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- favicon 
+		<link rel="shortcut icon" href="img/favicon.ico">
+		-->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<title></title>
+	</head>
+
+	<body>
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="profiles.html">Profiles</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="messages.html">messages</a>
+			</li>
+		</ul>
+
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Click Me
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Dude you should not have clicked that! </h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Definitely don't click the "Close" button.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="myModal" class="modal-body">
+		  <h5>Popover in a modal</h5>
+		  <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+		  <hr>
+		  <h5>Tooltips in a modal</h5>
+		  <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script>
+		  $(function () {
+		    $('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="popover"]').popover();
+		  })
+		</script>
+
+		<!-- <script>
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			})
+		</script> -->
+
+		<!-- <script>
+			$('#myModal').modal({
+			  keyboard: false
+			})
+		</script>
+		<script>$('#myModal').modal(options)</script>
+		<script>
+			$('#myModal').on('show.bs.modal', function (e) {
+			  // do something...
+			})
+		</script> -->
+	</body>
+</html>
